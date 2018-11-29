@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" *ngIf="isAuthenticated">
+   <a class="navbar-brand" href="#">
+      <img src="./assets/images/owcs.svg" alt="logo">
+   </a>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a 
+                  class="nav-link" 
+                  routerLink="/create" 
+                  routerLinkActive="active">
+                  CREATE
+               </a>
+            </li>
+            <li class="nav-item">
+               <a 
+                  class="nav-link" 
+                  routerLink="/search"
+                  routerLinkActive="active">
+                  SEARCH
+               </a>
+            </li>
+            <li class="nav-item">
+               <a 
+                  class="nav-link" 
+                  routerLink="/update"
+                  routerLinkActive="active">
+                  UPDATE
+               </a>
+            </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a class="nav-link" (click)="logout()">LOGOUT</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>

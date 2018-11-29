@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    top: 155px;
+}
+
+.card-body {
+    background: #e1e2e252;
+}
+
+.body-color {
+    background: #0872ba !important;
+    min-height: -webkit-fill-available;
+}
+
+.card{
+    box-shadow: 0 1rem 3rem #000000 !important;
+}
+
+.card-body .btn.btn-primary.btn-block {
+    border-radius: 25px;
+    box-shadow: 0 0rem 1rem #000000
+}
+
+.card-body .input-group{
+    box-shadow: 0 1rem 2rem #0000008c
+}
+
+.card-title {
+    text-shadow: 0px 5px 16px #1c03a7;
+}
+.alert.alert-danger {
+    top: 8px;
+    box-shadow: 0 1rem 2rem #0000008c;
+    border-color: red;
+}

@@ -1,0 +1,22 @@
+<div class="main-content row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li [ngClass]="{active: activeRoute==='pal'}" routerLinkActive="active" class="nav-item text-center">
+                    <a class="nav-link" routerLink="/search/pal">PAL</a>
+                </li>
+                <li  [ngClass]="{active: activeRoute==='tags'}" routerLinkActive="active" class="nav-item text-center">
+                    <a class="nav-link" routerLink="/search/tags" >FEATURES</a>
+                </li>
+                <li [ngClass]="{active: activeRoute==='template'}" routerLinkActive="active" class="nav-item text-center">
+                    <a class="nav-link" routerLink="/search/template" >TEMPLATE</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.navbar-light .navbar-nav .active > .nav-link {
+    background-color: #337ab7;
+    border: 2px solid #ddd;
+    border-bottom-color: RED;
+    color: #fff;
+    font-weight: bold;
+    border-top: none;
+}
+
+.navbar-light.bg-light {
+    width: 100%; 
+    padding-top: 0;
+}
+
+.navbar-light.bg-light .navbar-nav {
+    width: 100%; 
+    padding-left: 10px;
+}
+
+.nav-item.text-center {
+    width: 10%;
+}

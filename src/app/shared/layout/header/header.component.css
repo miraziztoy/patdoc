@@ -1,0 +1,26 @@
+.navbar-brand img {
+    width: 90px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #b9b5b5;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    border: 2px solid #ddd;
+    border-bottom-color: RED;
+    color: #42bcea;
+    font-weight: initial;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-inline.my-2.my-lg-0 .navbar-nav.mr-auto .nav-item {
+    cursor: pointer;
+}
+

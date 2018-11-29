@@ -1,0 +1,52 @@
+<div class="body-color">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card text-center shadow-lg bg-white rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Please Log In</h5>
+                    <br />
+                    <form role="form" (submit)="login(user)">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            </div>
+                            <input 
+                                type="text" 
+                                id="username" 
+                                class="form-control" 
+                                name="username"
+                                required 
+                                maxlength="50" 
+                                placeholder="Username" 
+                                [(ngModel)]="user.username" 
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            </div>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                class="form-control" 
+                                name="password" 
+                                required 
+                                maxlength="50" 
+                                placeholder="Password" 
+                                [(ngModel)]="user.password" 
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="alert alert-danger" *ngIf="loginFailMessage">
+                            Invalid Username/Password
+                        </div>
+                        <br />
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary btn-block" type="submit" name="action">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  

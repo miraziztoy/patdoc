@@ -1,0 +1,18 @@
+.wrapper {
+    padding-top: 5%;
+}
+
+.error-titles .h1{
+    color: #A2A2A2;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.btn-primary{
+    background-color: #07B3F9;
+    border-color: #07B3F9;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    -webkit-appearance: inherit;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+}
